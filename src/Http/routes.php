@@ -8,5 +8,9 @@ Route::group(['as' => 'postcode-nl::'], static function () {
         'as' => 'address',
         'uses' => 'Carry2Web\PostcodeNl\Http\Controllers\AddressController@get'
     ]);
+    Route::get('postcode-nl/autocomplete/{postcode}/{houseNumber}/{houseNumberAddition?}', [
+        'as' => 'address',
+        'uses' => 'Carry2Web\PostcodeNl\Http\Controllers\AddressController@get'
+    ]);
 
 });
