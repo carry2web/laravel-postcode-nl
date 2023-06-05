@@ -1,4 +1,4 @@
-# Postcode.nl client for Laravel 8
+# Postcode.nl international client for Laravel
 
 [![Build Status](https://travis-ci.org/Speelpenning-nl/laravel-postcode-nl.svg)](https://travis-ci.org/Speelpenning-nl/laravel-postcode-nl)
 [![License](https://poser.pugx.org/speelpenning/laravel-postcode-nl/license)](https://packagist.org/packages/speelpenning/laravel-postcode-nl)
