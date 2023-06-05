@@ -3,10 +3,10 @@
 [![Build Status](https://travis-ci.org/Speelpenning-nl/laravel-postcode-nl.svg)](https://travis-ci.org/Speelpenning-nl/laravel-postcode-nl)
 [![License](https://poser.pugx.org/speelpenning/laravel-postcode-nl/license)](https://packagist.org/packages/speelpenning/laravel-postcode-nl)
 
-A client using the Postcode.nl REST API for Dutch address verification.
+A client using the Postcode.nl REST API for International address verification.
 
 All the work for this package has been done by Gerben Speelpenning, I merely updated to composer.json to make it
-work with Laravel 10 and submitted it to Packagist for easy installation, but if there is anything that does not
+work with the international API, Laravel 10 and submitted it to Packagist for easy installation, but if there is anything that does not
 work either because of the Laravel update or updates to the PostcodeNL API please let me know so I can fix them!
 
 ## Installation 
@@ -14,7 +14,7 @@ work either because of the Laravel update or updates to the PostcodeNL API pleas
 Pull the package in through Composer:
 
 ```bash
-composer require pimoudeveldhuis/laravel-postcode-nl
+composer require carry2web/laravel-postcode-nl
 ```
 
 Next, register an account with Postcode.nl to obtain a key and secret. See https://api.postcode.nl/#register for 
@@ -23,7 +23,7 @@ further information. Once you have a key and secret, store them in your .env fil
 Add the following service provider to your application config:
 
 ```php
-Speelpenning\PostcodeNl\PostcodeNlServiceProvider::class,
+Carry2Web\PostcodeNl\PostcodeNlServiceProvider::class,
 ```
 
 Walk through the configuration section to make things work.
@@ -41,7 +41,7 @@ Example:
 <?php
 
 use Exception;
-use Speelpenning\PostcodeNl\Services\AddressLookup;
+use Carry2Web\PostcodeNl\Services\AddressLookup;
 
 class AddressDumper {
 
